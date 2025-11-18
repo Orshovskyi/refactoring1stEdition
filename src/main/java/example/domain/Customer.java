@@ -1,8 +1,8 @@
-package example;
+package example.domain;
 
 import java.util.List;
 
-class Customer {
+public class Customer {
 
     private final String name;
     private final List<Rental> rentals;
