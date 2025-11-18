@@ -16,4 +16,12 @@ class Rental {
     public Movie getMovie() {
         return movie;
     }
+
+    public double calculateAmount() {
+        return movie.getPriceCode().calculateAmount(daysRented);
+    }
+
+    public int calculateFrequentRenterPoints() {
+        return movie.getPriceCode().bonusPoints(daysRented);
+    }
 }
